@@ -1,90 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: #ededed;
-    font-family: Verdana;
-    width: 80%;
-    margin: 0 auto;
-}
-
-ul.rig {
-    list-style: none;
-    font-size: 0px;
-    margin-left: -2.5%;
-}
-
-ul.rig.manufacturers {
-    margin-left: -.5%;
-}
-
-ul.rig li {
-    display: inline-block;
-    padding: 10px;
-    margin: 0 0 2.5% 2.5%;
-    background: #fff;
-    border: 1px solid #ddd;
-    font-size: 16px;
-    font-size: 1rem;
-    vertical-align: top;
-    box-shadow: 0 0 5px #ddd;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-ul.rig.manufacturers li {
-    margin: 0 0 .5% .5%;
-    text-align: center;
-    height: 100px;
-    display: inline-block;
-    position: relative;
-}
-
-ul.rig li img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 10px;
-}
-ul.rig.manufacturers li img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-ul.rig li h3 {
-    margin: 0 0 5px;
-}
-
-ul.rig li p {
-    font-size: .9em;
-    line-height: 1.5em;
-    color: #999;
-}
-
-ul.rig.columns-4 li {
-    width: 22.5%;
-}
-
-ul.rig.columns-6 li {
-    width: 16.15%;
-}
-
 #promo_container {
     width: 100%;
     height: 150px;
     margin: 0 0 .5em 0;
-    background: url("images/tools.jpg") repeat-x;
+    background: url("css/images/tools.jpg") repeat-x;
 }
 
 .wrapper {
@@ -98,7 +16,7 @@ ul.rig.columns-6 li {
     width: 100%;
     z-index: 1;
     padding: 2em 2.5em;
-    background: url("images/icons/search.png") no-repeat;
+    background: url("css/images/icons/search.png") no-repeat;
     outline: none;
     background-position: 0 50%;
     margin: 1em 0;
@@ -106,42 +24,6 @@ ul.rig.columns-6 li {
     border-bottom: 3px solid #000;
 }
 
-/* Top menu */
-ul.topnav {
-    list-style: none;
-    text-align: center;
-    overflow: hidden;
-    padding: .5em;
-}
-
-ul.topnav li {
-    display: inline-block;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0 2em;
-}
-
-ul.topnav li a {
-    color: #000;
-    text-decoration: none;
-}
-
-ul.topnav li:hover {
-    text-decoration: underline;
-}
-
-ul.topnav li.icon {
-    display: none;
-}
-
-nav {
-    width: 100%;
-    padding: .2em;
-    font-size: .9em;
-    line-height: 1.8em;
-    background: #fff;
-    font-family: Verdana;
-}
 
 .categories ul {
     list-style: none;
@@ -175,7 +57,7 @@ header {
 }
 
 header .company_logo {
-    background: url("images/logo.jpg") no-repeat;
+    background: url("css/images/logo.jpg") no-repeat;
     background-size: contain;
     background-position: 50%;
     width: 33%;
@@ -198,7 +80,7 @@ header .shopping_cart {
     width: 33%;
     text-align: right;;
     float: right;
-    background: url("images/icons/shopping_cart.png") no-repeat;
+    background: url("css/images/icons/shopping_cart.png") no-repeat;
     background-position: 100%;
     padding: 5px 50px 5px 0px;
 }
