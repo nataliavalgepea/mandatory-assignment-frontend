@@ -1,0 +1,13 @@
+header {
+  width: inherit;
+  float: right;
+  height: inherit;
+
+  .company_info, .company_logo {
+    display: none;
+  }
+
+  .shopping_cart {
+    width: 100%;
+  }
+}

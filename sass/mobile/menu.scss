@@ -1,0 +1,40 @@
+nav {
+  float: left;
+  background: none;
+  width: inherit;
+}
+
+ul {
+  &.topnav {
+    li {
+      display: none;
+      padding: 0;
+
+      &.icon {
+        font-size: 1.5em;
+        cursor: pointer;
+        float: left;
+        display: inline-block;
+        text-decoration: none;
+
+        span {
+          font-size: .8em;
+          padding-left: .5em;
+          text-transform: uppercase;
+          vertical-align: top;
+        }
+      }
+      &:not(:first-child) {
+        line-height: 3em;
+      }
+    }
+
+    &.responsive {
+      li {
+        display: block;
+        text-align: left;
+        float: none;
+      }
+    }
+  }
+}

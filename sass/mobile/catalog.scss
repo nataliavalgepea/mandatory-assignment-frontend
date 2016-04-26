@@ -1,0 +1,21 @@
+ul.grid-nav li {
+  display: block;
+  margin: 0 0 5px;
+}
+
+ul.grid-nav li a {
+  display: block;
+}
+
+ul.rig {
+  margin-left: 0;
+}
+
+ul.rig li {
+  width: 49.5% !important; /* over-ride all li styles */
+  margin: 0 0 1% 1%;
+}
+
+ul.rig li:nth-child(odd) {
+  margin-left: 0;
+}

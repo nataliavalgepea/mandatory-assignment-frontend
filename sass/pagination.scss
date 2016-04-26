@@ -1,0 +1,28 @@
+div {
+  &.pagination {
+    text-align: center;
+    ul {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+        a {
+          color: $defaultFontColor;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+
+          &.active {
+            background-color: $highlightedFontColor;
+            color: $secondaryBackgroundColor;
+          }
+          &:hover:not(.active) {
+            background-color: $selectedColor;
+          }
+        }
+      }
+    }
+  }
+}

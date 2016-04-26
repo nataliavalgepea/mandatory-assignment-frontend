@@ -11,7 +11,7 @@ ul {
       display: inline-block;
       padding: 10px;
       margin: 0 0 $spaceSize $spaceSize;
-      background: $defaultBackgroundColor;
+      background: $secondaryBackgroundColor;
       border: 1px solid #ddd;
       font-size: 16px;
       font-size: 1rem;
@@ -34,7 +34,7 @@ ul {
       p {
         font-size: .9em;
         line-height: 1.5em;
-        color: #999;
+        color: $secondaryBackgroundColor;
       }
     }
     &.columns-4 {

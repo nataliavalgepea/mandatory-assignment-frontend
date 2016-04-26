@@ -3,7 +3,7 @@ nav {
   padding: .2em;
   font-size: .9em;
   line-height: 1.8em;
-  background: $defaultBackgroundColor;
+  background: $secondaryBackgroundColor;
   font-family: $defaultFontFamily;
 }
 
@@ -20,11 +20,15 @@ ul {
       cursor: pointer;
       padding: 0 2em;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       a {
-        color: #000;
+        color: $defaultFontColor;
         text-decoration: none;
 
-        :hover {
+        &:hover {
           text-decoration: underline;
         }
       }
