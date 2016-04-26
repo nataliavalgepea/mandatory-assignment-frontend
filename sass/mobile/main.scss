@@ -10,8 +10,36 @@ body {
   display: none;
 }
 
+#search {
+  float: left;
+  label {
+    display: inline-block;
+    float: right;
+    background-image: url('images/icons/barcode.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    height: 80px;
+    width: 50px;
+    margin-right: .5em;
+  }
+  input {
+    &.inputsearch {
+      width: 70%;
+    }
+    &.inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
 ul {
-  &.rig{
+  &.rig {
     &.manufacturers {
       display: none;
     }

@@ -4,10 +4,6 @@
 @import "pagination";
 @import "header";
 
-@media (max-width: 700px) {
-  @import "mobile/main.scss";
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,26 +25,42 @@ body {
   background: url("images/tools.jpg") repeat-x;
 }
 
+input {
+  &.inputfile {
+    display: none;
+  }
+}
+
 .wrapper {
   margin: .5em;
 }
 
-#search input {
-  border: none;
-  height: 2em;
-  font-size: 1em;
-  width: 100%;
-  z-index: 1;
-  padding: 2em 2.5em;
-  background: url("images/icons/search.png") no-repeat;
-  outline: none;
-  background-position: 0 50%;
-  margin: 1em 0;
+#search {
   border-top: 3px solid $borderColor;
   border-bottom: 3px solid $borderColor;
+  width: 100%;
+
+  label {
+    display: none;
+  }
+  input {
+    &.inputsearch {
+      border: none;
+      height: 2em;
+      font-size: 1em;
+      width: 100%;
+      z-index: 1;
+      padding: 1.5em 2.5em;
+      background: url("images/icons/search.png") no-repeat;
+      outline: none;
+      background-position: 0 50%;
+      margin: 1em 0;
+    }
+  }
 }
 
 .categories {
+  clear: both;
   ul {
     list-style: none;
 
@@ -72,6 +84,10 @@ body {
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  @import "mobile/main.scss";
 }
 
 
