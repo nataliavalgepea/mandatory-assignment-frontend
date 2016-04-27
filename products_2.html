@@ -7,34 +7,36 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="company_info">
-            <ul>
-                <li>Contact us</li>
-                <li>Delivery info</li>
-            </ul>
-        </div>
-        <a href="index.html" class="company_logo">
-        </a>
-        <div class="shopping_cart">
-            <p>Shopping cart</p>
-            <span>Your shopping card is empty</span>
-        </div>
-    </header>
-    <nav>
-        <ul class="topnav">
-            <li class="icon" onclick="toggleMenu()">☰<span>Menu</span></li>
-            <li>Machinery & Tools</li>
-            <li>Construction & Renovations</li>
-            <li>Decor & Storage</li>
-            <li>Lightning & Electrical</li>
-            <li>Kitchen, Bathroom & Sauna</li>
-            <li>Garden</li>
-        </ul>
-    </nav>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+<label for="nav-trigger"></label>
+
+<header>
+    <div class="filler"></div>
+    <div class="company">
+        <a href="index.html" class="company_logo"></a>
+    </div>
+    <div class="shopping_cart">
+        <a href="shopping_cart.html" class="shopping_cart_icon"></a>
+        <a href="shopping_cart.html">Shopping cart</a>
+        <span>Your shopping card is empty</span>
+    </div>
+</header>
+<ul class="navigation">
+    <li class="nav-item"><a href="#">Catalogue</a></li>
+    <li class="nav-item"><a href="#">Shopping lists</a></li>
+    <li class="nav-item"><a href="#">Order status</a></li>
+    <li class="nav-item"><a href="#">Order history</a></li>
+    <li class="nav-item"><a href="#">Account details</a></li>
+    <li class="nav-item"><a href="#">Help</a></li>
+</ul>
+
+<div class="site-wrap">
+
     <div id="search">
-        <input type="text" placeholder="Search for a product...">
+        <input type="text" placeholder="Search for a product..." class="inputsearch">
+        <input type="file" id="file" name="file" accept="image/*" capture="camera" class="inputfile">
+        <label for="file">Scan Barcode</label>
     </div>
 
     <ul class="rig columns-4">
@@ -160,10 +162,5 @@
         </ul>
     </div>
 </div>
-<script>
-    function toggleMenu() {
-        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-    }
-</script>
 </body>
 </html>

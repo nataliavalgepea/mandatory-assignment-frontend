@@ -1,13 +1,38 @@
 header {
-  width: inherit;
-  float: right;
   height: inherit;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: $defaultBackgroundColor;
+  div {
+    display: table-cell;
+  }
 
-  .company_info, .company_logo {
-    display: none;
+  .filler {
+    width: 50px;
+  }
+  .company {
+    text-align: center;
+    width: initial;
+    a {
+      width: 70px;
+      height: 70px;
+      background-position: 100%;
+      display: inline-block;
+    }
   }
 
   .shopping_cart {
-    width: 100%;
+    cursor:pointer;
+    width: 50px;
+    height: 32px;
+    vertical-align: middle;
+    padding: 0 1em;
+
+    span, a:not(.shopping_cart_icon) {
+      display: none;
+    }
   }
 }

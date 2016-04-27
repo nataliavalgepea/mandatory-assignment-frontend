@@ -9,22 +9,27 @@ body {
 #promo_container {
   display: none;
 }
-
+.site-wrap {
+  padding: 0 1em;
+}
 #search {
-  float: left;
+  display: table;
+  table-layout: fixed;
+  padding: 5px 0;
+
   label {
-    display: inline-block;
-    float: right;
+    display: table-cell;
     cursor: pointer;
     margin-top: .3em;
     border-radius: 3px;
     color: #fff;
-    padding: 1.5em;
     background: $highlightedFontColor;
+    width: 8em;
+    text-align: center;
   }
   input {
     &.inputsearch {
-      width: 70%;
+      display: table-cell;
     }
     &.inputfile {
       width: 0.1px;

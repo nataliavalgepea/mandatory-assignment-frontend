@@ -1,40 +1,62 @@
-nav {
-  float: left;
-  background: none;
-  width: inherit;
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  background: $menuBackgroundColor;
 }
 
-ul {
-  &.topnav {
-    li {
-      display: none;
-      padding: 0;
+.nav-item {
+  width: 200px;
 
-      &.icon {
-        font-size: 1.5em;
-        cursor: pointer;
-        float: left;
-        display: inline-block;
-        text-decoration: none;
+  a {
+    display: block;
+    padding: 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s;
+    color: $defaultFontColor;
 
-        span {
-          font-size: .8em;
-          padding-left: .5em;
-          text-transform: uppercase;
-          vertical-align: top;
-        }
-      }
-      &:not(:first-child) {
-        line-height: 3em;
-      }
-    }
-
-    &.responsive {
-      li {
-        display: block;
-        text-align: left;
-        float: none;
-      }
+    &:hover {
+      color: #fff;
+      background: $highlightedFontColor;
     }
   }
 }
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: absolute;
+  left: 1em;
+  top: 22px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+.nav-trigger + label, .site-wrap, header {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap, .nav-trigger:checked ~ header {
+   left: 200px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+ }
+
+

@@ -1,5 +1,5 @@
 @import "variables";
-@import "menu";
+
 @import "catalog";
 @import "pagination";
 @import "header";
@@ -16,6 +16,7 @@ body {
   background: $defaultBackgroundColor;
   width: 80%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 #promo_container {
@@ -31,8 +32,16 @@ input {
   }
 }
 
-.wrapper {
-  margin: .5em;
+.site-wrap {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: $defaultBackgroundColor;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  background-size: 200%;
 }
 
 #search {
@@ -90,4 +99,9 @@ input {
   @import "mobile/main.scss";
 }
 
+@media (min-width: 701px){
+  @import "menu";
+}
 
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
