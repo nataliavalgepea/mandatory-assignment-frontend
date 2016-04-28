@@ -12,7 +12,13 @@
   width: 1 / 6 * 100%;
   padding: 1em;
   font-weight:bold;
-
+  &.active {
+    background: $highlightedFontColor;
+     a{
+       color: #fff;
+       text-decoration: none;
+     }
+  }
   &:hover {
     background: $highlightedFontColor;
 

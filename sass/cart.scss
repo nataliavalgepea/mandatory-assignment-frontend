@@ -1,0 +1,90 @@
+.total {
+  border-top: 3px solid $borderColor;
+  padding: 1em;
+  background: $secondaryBackgroundColor;
+
+  span {
+    font-size: 2em;
+    &.total_price {
+      float: right;
+    }
+  }
+}
+
+ul {
+  &.products {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+
+    li {
+      float: left;
+      width: 100%;
+      background: $defaultBackgroundColor;
+      padding: 1em 0;
+      height: 220px;
+      position: relative;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      img {
+        max-width: 200px;
+        max-height: 180px;
+        float: left;
+        margin-right: 1em;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 1.2em;
+        vertical-align: top;
+        float: left;
+      }
+      .price_amount_container {
+        clear: right;
+        margin-top: 140px;
+      }
+
+      .amount_controls {
+        float: right;
+
+        input {
+          width: 55px;
+          height: 42px;
+          text-align: center;
+        }
+
+        span {
+          background: $secondaryBackgroundColor;
+          border: 1px solid #ccc;
+          vertical-align: middle;
+          line-height: 40px;
+          width: 50px;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            background: #ccc;
+          }
+        }
+      }
+
+      .price {
+        font-size: 1.2em;
+        float: left;
+      }
+
+      .remove {
+        background: url('images/icons/remove.png') 50% 50% no-repeat;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        float: right;
+
+        &:hover {
+          background-color: $secondaryBackgroundColor;
+        }
+      }
+    }
+  }
+}
