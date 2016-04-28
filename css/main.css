@@ -498,6 +498,8 @@ input.inputfile {
       position: absolute;
       z-index: -1; }
   ul.rig.manufacturers {
+    display: none; }
+  .checkout {
     display: none; } }
 
 @media (min-width: 701px) {
