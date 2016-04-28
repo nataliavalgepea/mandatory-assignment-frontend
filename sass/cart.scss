@@ -4,7 +4,7 @@
   background: $secondaryBackgroundColor;
 
   span {
-    font-size: 2em;
+    font-size: 1.6em;
     &.total_price {
       float: right;
     }
@@ -18,16 +18,15 @@
     width: 100%;
 
     li {
-      float: left;
       width: 100%;
       background: $defaultBackgroundColor;
       padding: 1em 0;
       height: 220px;
-      position: relative;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee;
       img {
         max-width: 200px;
+        width: 30%;
         max-height: 180px;
         float: left;
         margin-right: 1em;
@@ -71,6 +70,7 @@
       .price {
         font-size: 1.2em;
         float: left;
+        line-height: 45px;
       }
 
       .remove {
@@ -86,3 +86,19 @@
       }
     }
   }
+
+button {
+  &.checkout {
+    background: $highlightedFontColor;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: 1px solid $highlightedFontColor;
+    border-radius: 2px;
+    padding: 1em;
+    margin: 1em auto;
+    display: table;
+    cursor: pointer;
+  }
+}

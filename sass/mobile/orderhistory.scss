@@ -1,0 +1,26 @@
+.orders {
+  li {
+    div {
+      &.table {
+        display: block;
+
+        .column {
+          display: none;
+        }
+        .row {
+          display: block;
+        }
+
+        .cell {
+          width: 100% !important;
+          display: block;
+
+          &.order_data {
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}
