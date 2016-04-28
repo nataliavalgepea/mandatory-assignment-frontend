@@ -4,6 +4,7 @@
 @import "pagination";
 @import "header";
 @import "orderhistory";
+@import "ordersummary";
 
 * {
   box-sizing: border-box;
@@ -21,7 +22,6 @@ body {
 }
 html, body {
   height: 100%;
-  font-size: 10pt;
 }
 #promo_container {
   width: 100%;
