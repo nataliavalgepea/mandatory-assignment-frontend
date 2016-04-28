@@ -1,0 +1,54 @@
+.orders {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+
+  li {
+    float: left;
+    width: 100%;
+    background: $defaultBackgroundColor;
+    padding: 1em 0;
+    position: relative;
+    border-bottom: 1px solid #eee;
+  cursor: pointer;
+    &:hover {
+      background: $secondaryBackgroundColor;
+    }
+    div {
+      &.table {
+        width: 100%;
+        .column {
+          display: table-column;
+        }
+        display: table;
+
+        .row {
+          display: table-row;
+        }
+        .cell:first-child {
+          width: 100px;
+        }
+        .cell:not(:first-child) {
+          padding: .5em;
+        }
+        .cell {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          &.order_data {
+            padding-left: 2em;
+            text-align: left;
+          }
+          img {
+            max-width: 100px;
+          }
+
+          p {
+            padding: .2em 0;
+          }
+        }
+      }
+    }
+  }
+}
