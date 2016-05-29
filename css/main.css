@@ -64,20 +64,18 @@
       .products li .remove:hover {
         background-color: #fafafa; }
 
-.checkout {
-  background: #E95233;
+.proceed {
   color: #fff;
   width: 100%;
   font-weight: bold;
   font-size: 1.4em;
-  border: 1px solid #E95233;
   border-radius: 20px;
   padding: 1em;
   margin: 1em auto;
   display: table;
   cursor: pointer;
   text-align: center; }
-  .checkout:hover {
+  .proceed:hover {
     text-decoration: none; }
 
 ul.rig {
