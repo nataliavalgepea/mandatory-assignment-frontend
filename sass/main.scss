@@ -20,9 +20,11 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
+
 html, body {
   height: 100%;
 }
+
 #promo_container {
   width: 100%;
   height: 150px;
@@ -99,13 +101,33 @@ input {
   }
 }
 
+.add_cart_btn {
+  background-color: $highlightedFontColor;
+  padding: 1em;
+  border: none;
+  float: right;
+  color: #fff;
+  cursor: pointer;
+
+  &.added {
+    background-color: red;
+  }
+
+}
+
 @media (max-width: 700px) {
   @import "mobile/main.scss";
 }
 
-@media (min-width: 701px){
+@media (min-width: 701px) {
   @import "menu";
 }
 
 /* Micro reset */
-*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
