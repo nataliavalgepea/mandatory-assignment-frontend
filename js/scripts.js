@@ -74,7 +74,7 @@
      * Updates the label of shopping cart depending on the amount of products in the cart
      */
     function updateShoppingCart() {
-        var shoppingCartEmptyText = 'Your shopping card is empty';
+        var shoppingCartEmptyText = 'Your shopping cart is empty';
         $('#shopping_cart_text').html(shoppingCartEmptyText);
 
         if (shoppingCart.length > 0) {
@@ -87,7 +87,6 @@
     $(document).ready(function () {
         renderProductsOnPage();
         updateShoppingCart();
-
 
         $('.add_cart_btn').click(function () {
             var button = $(this);
